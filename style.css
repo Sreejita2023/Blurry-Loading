@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+    z-index: -2;
+}
+.bk-img{
+    position: absolute;
+    background-image: url("wall.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: calc(100% + 300px);
+    height: calc(100vh + 60px);
+    top: -30px;
+    left: -150px;
+    z-index: -1;
+    filter: blur(30px);
+}
+.loading-text{
+    font-size: 50px;
+    color: white;
+}
